@@ -1,0 +1,4 @@
+1. Usually way to run GCC is to run the executable called gcc. When you compile C++ programs, you should invoke GCC as g++ instead.
+ 
+2. To enable C++11 support in GCC, use the option -std=c++11;
+   To obtain all teh diagnostics required by the standard, you can also specify -pedantic (or -pedantic-errors if you want them to be errors rather than warnings))
