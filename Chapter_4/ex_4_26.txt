@@ -1,0 +1,2 @@
+unsigned int have at least 16 bits, so on some machines, it's just 16 bits long. 
+And if you do bitwise operation with 16bits left-operand, and a 32 bits right operand, you will get undefined result. 

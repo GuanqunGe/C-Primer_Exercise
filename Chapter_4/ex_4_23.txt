@@ -1,0 +1,11 @@
+
+string s = "word";
+string pl = s + s[s.size()-1] == 's' ? "" : "s";
+
+Add operator has higher precedence than equality operator, which has higher precedence than conditional operator, so this is essentially: 
+
+   string pl = ((s+s[s.size()-1]) == 's' ) ? "" : "s";
+
+I would change it to:
+  
+   string pl = s + (s[s.size()-1] == 's' ? "" : "s");

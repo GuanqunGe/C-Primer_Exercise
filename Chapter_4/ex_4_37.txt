@@ -1,0 +1,13 @@
+int i; double d; const string *ps; char *pc; void *pv;
+
+(1) pv = (void*)ps;
+    pv = static_cast<void*>(const_cast<string*>(ps));
+
+(2) i = int(*pc);
+    i = static_cast<int>(*pc);
+
+(3) pv = &d;
+    pv = static_cast<void*>(&d);
+
+(4) pc = (char*)pv;
+    pc = static_cast<char*>(pv);

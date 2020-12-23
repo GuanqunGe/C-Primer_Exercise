@@ -1,0 +1,5 @@
+i *= d, where i is int, d is double
+
+-> change this expression so it does integral, rather than floating point multiplication.
+
+   i *= static_cast<int>(d);

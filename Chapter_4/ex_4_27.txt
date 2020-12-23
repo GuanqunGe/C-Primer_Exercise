@@ -1,0 +1,14 @@
+unsigned long ul1  =3, ul2 = 7;
+
+(a) ul1 & ul2
+
+assume the program runs on a 32 bits unsigned long machine, then a number of 3 has 28 leading 0's and 0011, while a number of 7 has 28 leading 0's and a following 0111.
+
+  ul1 & ul2 will have 28 leading 0's and 0011 --> a number of 3
+
+(b) ul1 | ul2
+
+  ul1 | ul2 will have 28 leading 0's and 0111 --> a number of 7
+
+(c) ul1 && ul2 will return true
+(d) ul1 || ul2 will return true 

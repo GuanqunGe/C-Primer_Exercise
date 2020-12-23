@@ -1,0 +1,17 @@
+Original statement:
+     string finalgrade = (grade > 90) ? "high pass" : (grade < 60) ? "fail" :"pass";
+
+Under right associative rule, it's rewritten as:
+
+    string finalgrade = (grade > 90) ? "high pass" : ((grade < 60) ? "fail" :"pass");
+
+if grade is not larger than 90, the second conditional expression will be evaluated, to further determine if the grade pass 60.
+
+Under the left associative rule, it's rewritten as:
+
+    string finalgrade = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" :"pass";  
+
+The left conditinal expression will be evaluated first, the returned value of it will be sued to evaluate the right conditional expression, so
+	if grade > 90, finalgrade = "high pass" ? "fail":"pass", finalgrade will be fail. 
+	if grade <= 90 but > 60, finalgrade will be pass
+	if grade < 60, finalgrade will be fail.

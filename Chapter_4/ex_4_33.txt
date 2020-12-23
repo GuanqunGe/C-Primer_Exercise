@@ -1,0 +1,8 @@
+    SomeValue ? ++x, ++y:--x, --y;
+
+Two possible ways it could go:
+    (SomeValue ? (++x, ++y):--x), --y;
+Or  SomeValue ? (++x, ++y) : (--x, --y);
+
+Now for the second one to happen, we are assuming that the comma operator (,) is strong enough to hold --x and --y together, in front of the ?: operator, but unfornately it is not.
+So instead, the first possibility happens

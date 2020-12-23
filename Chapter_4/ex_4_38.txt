@@ -1,0 +1,4 @@
+explain:  double slope = static_cast<double>(j/i);
+
+
+assuming i and j are ints, what this expression does is that: first it does the division in int (ie, digits after the decimal point are truncated), returns an int. Then this int number is casted to double, and then assigned to variable slope.
