@@ -1,0 +1,15 @@
+(a) for (int ix = 0; ix!=sz; ++ix) {/*... */}
+    if(ix != sz)  //....
+
+    ix is defined at the start of for loop, so it's out of scope after the for loop.
+
+(b) int ix;
+    for(ix != sz; ++ix) {/* ... */}
+
+   This for loop is missing init statement, should be for( ; ix!=sz; ++ix){/* .. */} if ix is initialized before, or for(ix=xxx; ix!=sz; ++ix){...}
+
+
+(c) for (int ix = 0; ix!=sz; ++ix, ++sz) {/*...*/}
+   
+    if at the first iteration, ix!=sz is satisfied, then this loop will never end. 
+

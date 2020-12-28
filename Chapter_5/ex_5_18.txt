@@ -1,0 +1,20 @@
+(a) do-while has a block of statments, should use curly braces:
+    do{
+	int v1, v2;
+        cout << "Pleae enter two numbers to sum: ";
+        if(cin >> v1 >> v2)
+	    cout << "The sum is : " << v1+v2 << endl;
+    }while(cin);
+
+(b) do {
+	//....
+    }while(int ival = get_response());
+
+    Condition statement shouldn't have initialization/definition in it. 
+
+(c) do{
+        int ival = get_response();
+    }while(ival);
+
+   In the condition, ival is already out-of-scope.
+   Variable used in the condition should be defined outside of the do-while body.

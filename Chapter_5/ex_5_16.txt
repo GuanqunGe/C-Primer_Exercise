@@ -1,0 +1,18 @@
+For loop:
+
+    for(decltype(vec.size()) i =0; i != vec.size(); i++) {....}
+
+While loop:
+    std::string str;
+    while(cin >> str) {....}
+
+
+Use the other loop construct to re-write these loops:
+
+    decltype(vec.size()) i=0;
+    while( (i++) != vec.size()){...}
+
+
+    for(std::string str; cin>> str; ){...}
+
+If I can use only one loop, I will use for loop, because it has three elements: init-statement, condition, and expression, so I can define variables at the beginning of for loop without worrying about unuseful variables wasting resources after the loop. 
