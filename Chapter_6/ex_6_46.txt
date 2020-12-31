@@ -1,0 +1,5 @@
+I wasn't sure about the answer, so I wrote a piece of code and tried to compile it (ex_6_46.cxx) and it failed with error messages "error: call to non-constexpr function s1.size()‘"
+
+So the answer is no, even though the function does have literal types for return type and parameter type and has only 1 return statement, it calls to non-constexpr function inside the function body (which is evaluated at run time instead of compile time).
+
+[A constexpr function can have other statements in the body as long as these statements generate no actions at run time]

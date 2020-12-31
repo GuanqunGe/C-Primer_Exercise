@@ -1,0 +1,11 @@
+void print(const int ia[10]){
+
+    for(size_t i = 0; i!= 10; ++i)
+        cout << ia[i] << endl;
+}
+
+
+I don't see a problem here. The function print takes a pointer to a const int as argument, and then prints out 10 elements following the argument (including the element argument itself points to).
+
+
+I am concerned about whether the size of 10 is ignored by the compiler, as in Page 218, it says " As usual, the compiler ignores the first dimension". If so, then this function is the same as void print(const int *ia) and there is so safe guard on the ia[i] part. 

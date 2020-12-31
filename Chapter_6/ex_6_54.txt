@@ -1,0 +1,8 @@
+function: int func(int, int);
+vector: std::vector<int (*)(int ,int)> vec;
+
+Or typedef int (*p)(int, int);  //using p = int (*)(int, int);
+   std::vector<p> vec;
+
+Or typedef int Func(int, int); //using Func = int (int, int); 
+   std::vector<Func *> vec;

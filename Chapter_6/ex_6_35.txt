@@ -1,0 +1,4 @@
+Two reasons:
+1. val-- reduces the val, but returns the unchanged value, so once the function is called, the recursion will not stop because it keeps calling the function with same value. (Argument is not changing)
+
+2. there is an uncertainty of which operand will be first evaluated for the * operator, so it's wrong to have val-- and val on both sides of the operator.

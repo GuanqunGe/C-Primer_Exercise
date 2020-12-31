@@ -1,0 +1,5 @@
+difference between parameter and argument:
+
+parameter is part of the function definition, it's what will be used in the function body (sometimes parameters are not used). Parameters are wrapped up in a parameter list like declarations, when the function is called, they will be defined and initialized.
+
+Argument is what's used to call the function, and initialize the parameters of the called function. Arguments can be an r-value, or l-value, but if they are l-value, arguments have to be defined before being used to call the function. 

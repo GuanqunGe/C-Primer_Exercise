@@ -1,0 +1,10 @@
+char *init ( int ht, int wd = 80, char bckgrnd = ' ' );
+
+(a) init();
+    Illegal, because parameter 'ht' doesn't not have default argument, and need the caller to provide argument for it.
+
+(b) init(24, 10);
+    Legal, it's essentially calling init(24, 10, ' ');
+
+(c) init(14, '*');
+    Legal but probably not the same as user's intention. Here '*' is used to initialize integer parameter wd, '*' has decimal value of 42, so it's calling init(14, 42, ' ');

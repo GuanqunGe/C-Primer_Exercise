@@ -1,0 +1,22 @@
+(a) int calc(int , int);
+    int calc(const int, const int);
+
+    top-level const in argument is indistinguishable, so they are two same functions, the second declaration will overwrite the first declaration, ie. redeclare the function.
+
+(b) int get();
+    double get();
+   
+    It's wrong to have two overloaded function to have same parameter list but different return type. So the second declaration will cause an compilation error.
+
+
+(c) int *reset(int *)
+    double *reset(double *);
+
+    The parameter list in two overloaded function are pointers, which can only be intialized with the same type. So these are two different functions, no ambiguity.
+    [the type of the pointer and the object to which it points must match.]
+
+
+    PS. A summary:
+        type of pointer must match the object type
+	the type of plain reference must match the object type
+        the type of const reference could be different from the object it refers to as long as there is an implicit conversion between two types.

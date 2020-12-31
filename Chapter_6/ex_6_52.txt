@@ -1,0 +1,9 @@
+given declarations: 
+ 	void manip(int, int);
+	double dobj;
+
+(a) manip('a', 'z');
+    arguments will be promoted to int, so rank 3 conversion will be done.
+
+(b) manip(55.4, dobj);
+    arguments will be arithmetically converted to int, so rank 4 conversion will be done.

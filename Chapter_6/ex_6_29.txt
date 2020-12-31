@@ -1,0 +1,1 @@
+I don't see why not, I always want to use reference for range for, to avoid copy-initializing loop variable over and over again. The only thing to note is to use low-level const if you don't want/intend to change the elements of the sequence.

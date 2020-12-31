@@ -1,0 +1,19 @@
+Four declarations that could be used for a function that returns a reference to an array of ten strings:
+
+Direct declaration:
+1) std::string (&function_name(parameter list)) [10];
+
+Type alias:
+2) using arrStr = std::string[10];  // or, typedef std::string arrStr[10];
+   arrStr &function_name(parameter_list);
+
+Trailing return:
+3) auto function_name(parameter_list) -> std::string (&)[10];
+
+
+decltype:
+4) std::string str[10];
+   decltype(str) &function_name(parameter list);
+
+
+I prefer trailing return, it's the most straight forward one, easy to read, and do not need to waste memory space like decltype does. 

@@ -1,0 +1,5 @@
+(a) int ff(int a, int b = 0, int c = 0);
+    correct. 
+
+(b) char *init( int ht = 24, int wd, char bckgrnd);
+    wrong, all the parameters sitting to the right of the default argument should also have default arguments.

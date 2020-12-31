@@ -1,0 +1,7 @@
+string s;
+while(cin >> s && s!= sought) {} //empty body
+assert(cin)
+
+
+The loop takes input from the keyboard until it sees an end-of-file or finds the string that equals variable sought. I don't think it's a good use of assert, because if I decided to stop typing, cin >> s will fail and the program will be terminated, which isn't being handled nicely.
+assert should be used to verify things that truly should not be possible, it shouldn't be used to substitue for run-time logic checks.

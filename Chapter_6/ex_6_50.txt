@@ -1,0 +1,18 @@
+(a) f(2.56, 42)
+    viable functions: f(int, int), f(double, double = 3.14);
+    The call is illegal because it's ambiguous, the compiler couldn't decide which function is the best match, as if it looks at different argument, each of two viable functions is a better match than the other. 
+
+(b) f(42)
+    viable functions: f(int), f(double, double = 3.14)
+    best match: f(int)
+    Because f(int) has exact match for the argument type, while f(double, double=3.14) requires an implicit type conversion.
+
+(c) f(42, 0)
+    viable function: f(int, int), f(double, double = 3.14)
+    best match: f(int, int)
+    Same reason as (b)
+
+(d) f(2.56, 3.14)
+    viable functions: f(int, int), f(double, double = 3.14)
+    best match: f(double, double  = 3.14)
+    Again, f(double, double = 3.14) provides exact type match. 

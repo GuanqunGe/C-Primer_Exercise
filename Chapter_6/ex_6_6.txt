@@ -1,0 +1,9 @@
+explain the differences between a parameter, a local variable, and a local static variable.
+
+A parameter is enclosed by parentheses following function name, separated by comma. It has to be initialized by the arguments passed to the function when function is called. 
+
+A local variable is a variable defined inside the function body between two curly braces. A local variable can be defined without initializer, but it will be default initialized.
+
+Both parameter and local variable only exist when the function is being executed, they die when the function ends. 
+
+A local static variable is also a variable defined inside the function body, but it's static, it's defined/initialized before the function actually being executed, and only dies when the program terminates. If a local static variable is defined without initializer, it will be value-initialized.

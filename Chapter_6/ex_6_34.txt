@@ -1,0 +1,5 @@
+Two cases:
+
+If the argument is postive, changing stopping condition to if(val!= 0) will result in 1 more recursion than before.
+
+If the argument given is negative, changing stopping condition to if(val!=0) will lead to disastrous result as the recursion will never end, because val-1 will never be 0.

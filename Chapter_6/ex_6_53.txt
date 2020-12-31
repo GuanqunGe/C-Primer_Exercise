@@ -1,0 +1,11 @@
+(a) int calc(int &, int &);
+    int calc(const int &, const int &);
+    Both are valid, two overloaded function declared. 
+
+(b) int calc(char*, char*);
+    int calc(const char*, const char*);
+    both are valid, two overloaded function declared.
+
+(c) int chacl(char*, char*);
+    int calc(char* const, char* const);
+    Declarations with/wout top level const are indistinguishable, the second declaration overwrites the first one.
