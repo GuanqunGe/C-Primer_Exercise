@@ -14,7 +14,7 @@ int main(){
 
 
     //now let's change s
-    s = "GoodBye!"
+    s = "GoodBye!";
     cout << str << endl; //now str is invalid, you'll compilation error here.
     cout << *str << endl;  //wrong, str is invalid.
     return 0;
