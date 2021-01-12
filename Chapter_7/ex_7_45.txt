@@ -1,0 +1,1 @@
+If we define a vector to hold objects of type C, std::vector<C> vec(10) is legal, because type C has default constructor.

@@ -1,0 +1,2 @@
+read function changes its Sales_data parameter, so it has to be a plain reference
+print function does not change its Sales_data parameter, so in order to be able to use print function with const object, its parameter is a reference to const.

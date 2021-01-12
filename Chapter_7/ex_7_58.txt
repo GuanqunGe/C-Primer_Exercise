@@ -1,0 +1,5 @@
+In example.h: rate and vec shouldn't be initialized inside the class, because they are neither const integer type, nor constexpr of literal type.
+
+In example.C:
+rate and vec should be defined and initialized in example.C instead of just being defined in example.C
+vecSize should also be defined in example.C, with no initialzers.

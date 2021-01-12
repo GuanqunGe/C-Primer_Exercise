@@ -1,0 +1,2 @@
+reading input to assign to two class objects, data1 and data2.
+it's like cin >> data1. member >> data2. member

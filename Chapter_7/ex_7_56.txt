@@ -1,0 +1,8 @@
+A static class member is a data member of the class which doesn't belong to any object of the class type, instead is associated with the class.
+
+Advantage of static member is that different objects of the class type can share the universal values which are specific to the class, while avoid defining redundant varaibles to store the same values. And that when a static class member changes its value, it's visible to all object of the class type. Static member can also have incomplete type, and be used as default argument
+
+Difference:
+1. static member in general should not have in-class initializer, except static members that are const integer type or constexpr of literal type
+2. static member can be used as default argument of the member functions while nonstatic data members can not
+3. static member functions can not be defined as const, nor use any nonstatic data member of the class.

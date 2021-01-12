@@ -1,0 +1,3 @@
+What happens if we put the typedef of pos as the last line of Screen class:
+
+when the compiler tries to compile the declaration of function dummy_fcn, it sees a type 'pos', which is not seen anywhere before the declaration of dummy_fcn in the class, so the compiler will keep looking for this name in the surrounding scope before the declaration of dummy_fcn, which fails, thus compiler will throw an error.

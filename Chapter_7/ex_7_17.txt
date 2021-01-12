@@ -1,0 +1,1 @@
+The only difference between class and struct is the default access level, of members/member functions defined before the first access specifier. For class, the ones before the first access specifier are private, while for struct they are public.

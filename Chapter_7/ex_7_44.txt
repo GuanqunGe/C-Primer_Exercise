@@ -1,0 +1,2 @@
+It's not legal, because:
+    this is a vector with element being a class type. When no element value is provided, element initializer will be the default constructed class, however this NoDefault class doesn't have default constructor.

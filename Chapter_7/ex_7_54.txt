@@ -1,0 +1,2 @@
+No, because functions that begins with set_ have statement that causes actions during run time, they don't qualify for a constexpr function
+

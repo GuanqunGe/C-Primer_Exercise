@@ -1,0 +1,6 @@
+For now, my Person class only has 
+1. data members
+2. constructors
+3. member functions that returns data members (Name(), Address())
+
+Constructors, and Name(), Address() function should be declared as public because they are part of the interface. Data member (string name, address) should be declared as private because they are accessible through the interface, and that declaring them as private can avoid users accidentally changing their values without intention.

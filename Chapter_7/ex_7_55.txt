@@ -1,0 +1,6 @@
+struct Data{
+    int ival;
+    std::string s;
+};
+
+Data class is not a literal class. It is an aggregate class, but its class members are not all literal types. (std::string is not a literal type)

@@ -1,0 +1,11 @@
+If the return type of move, set, and display was Screen instread of Screen&:
+1. The functions are still able to do the same thing as before
+2. The result of concatenating a sequence of action into a single expression will change drastically:
+   for example: 
+		myScreen.move(4, 0).set('#').display(cout);  
+                myScreen.display(cout); 
+     1st statement will move the cursor of myScreen to (4, 0), returns a copy of myScreen, then this temporary object will be the left operand of (.set('#')) and its character at postion (4,0) will be change to '#', then another temporary object will be created which is the copy of the previous temporary object, and which will be the left operand of (.display(cout)). So at the end, ostream cout will have a string whose (4,0) character is '#', but the only change done to myScreen is moving its cursor to (4,0), nothing more.
+     following 2nd statement will simply display what's initially saved in myScreen.contents, ie. we will see two different string displayed.
+
+
+Above statements confirmed by ex_7_29

@@ -1,0 +1,14 @@
+(a) Sales_data &combine(Sales_data);
+    Parameter is a Sales_data type but argument is a string
+    string will be used to construct a temporary object, and then that temporary object is used to initialize the parameter of combine.
+
+(b) Sales_data &combine(Sales_data &);
+    Parameter is a reference to Sales_data but argument is a string
+    string will be passed to class constructor to construct a temporary object, which will then be passed through reference to function combine. But note that the parameter is a regular reference, but a temporary object is not subject to change, there will be an error complaining about initialize a regular reference from an const object
+
+(c) Sales_data &combine(const Sales_data &) const;
+    It's similar to case (b), string will be used to construct a temporary object, which will then be passed to function combine through a reference. Note that this time it's a reference to const, so it's legal to initialize the parameter using temporary object. But there is still one bug in the declaration, combine is a const function but its return type is a regular reference (should be a reference to const)
+
+
+
+One thing that I don't really understand is that in all three case, we completely lost the temporary object, why is this okay? 

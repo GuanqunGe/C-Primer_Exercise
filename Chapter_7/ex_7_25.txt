@@ -1,0 +1,1 @@
+Yes, because even though class Screen has a member that requires dynamic memory, it uses std::string as the type of that member, for which the string class has already taken care of allocating and deallocating memory.

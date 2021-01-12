@@ -1,0 +1,11 @@
+(a) A class must provide at least one constructor 
+False, when a class doesn't provide constructor, the compiler will automatically generate one synthesized default constructor for this class, with the assumption that members of this class can be default initialized.
+
+(b) A default constructor is a constructor with an empty parameter list
+False, a default constructor can have non-empty parameter list, as long as these parameters have default arguments.
+
+(c) If there are no meaningful default values for a class, the class should not provide a default constructor
+True, with only one requirement that there should be in-class initializers for its members that can't be default initialized.
+
+(d) If a class does not define a default constructor, the compiler generates one that initializes each data member to the default value of its associated type.
+False. The compiler will generate synthesized default constructor only if a class does not define any constructor, not only default constructor.

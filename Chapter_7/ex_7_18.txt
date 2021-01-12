@@ -1,0 +1,1 @@
+The encapsulation is the hiding of data members and member functions of the class which are part of the implementation from users of the class. It's very useful because it allows the users of classes to use  the class without worrying about the implementation of its functions.

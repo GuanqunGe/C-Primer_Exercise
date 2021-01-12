@@ -1,0 +1,1 @@
+NO, if so then both are default constructor, the compiler will be confused and will throw an error when no argument is provided to initialize an class object becuase it's too ambiguous.

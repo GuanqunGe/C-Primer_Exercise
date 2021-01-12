@@ -1,0 +1,4 @@
+Friends allow functions that are not members of a class to access the non-public members of the class. 
+So friends are useful when the interface functions needs to interact with classes on non-public member level. 
+Pro: described above
+Cons: as part of the interface functions that deals with the non-public members of the class, usually body of friends functions have details of the implementation, thus it's subject to changes whenever the class members change. 

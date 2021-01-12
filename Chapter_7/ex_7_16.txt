@@ -1,0 +1,2 @@
+There is no constraint on how often access specifier may appear inside a class definition.
+But there are constraints on where access specifier should appear, for example, constructors and interface member function should follow public specifier, while other members/member functions of the class could follow either public or private specifier depending on the needs. Generally data members and functions that're part of the implementation should be encapsulated, and follow the priviate specififer.
