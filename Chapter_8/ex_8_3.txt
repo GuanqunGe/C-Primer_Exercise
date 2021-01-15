@@ -1,0 +1,7 @@
+while(cin >> i) /*... */
+
+when we enter end-of-file, or the input doesn't match the type of i, ie. if i is an int but the input is string or char. No issue will occur if otherwise, ie. if i is std::string but the input is an integer. The condition also fail if there is a system-level failure usch as an unrecoverable read or write error.
+
+
+*Using a stream as a condition is equivalent to calling !fail(). fail() returns true is failbit or badbit in the stream is set.
+* failbit is true if the end-of-file doens't follow valid input. Note** that if end-of-file follows valid input, then failbit is false. 

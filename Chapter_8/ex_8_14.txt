@@ -1,0 +1,2 @@
+Why use const auto &?
+Use reference to avoid copying things over, and use const to avoid changing element value accidentally inside the loop since the loop intends not to change the vector.
