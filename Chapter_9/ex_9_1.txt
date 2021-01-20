@@ -1,0 +1,3 @@
+(a) list is preferred for this one. As it involves inserting element in the middle of the container
+(b) a deque is preffered. Since this one involves adding/removing elements at the front/back. Even though a list is capable of doing that too, list is slower than deque in removing/add elements at the front/back, and memory overhead is substantial for list.
+(c) a vector is preffered. Even though a vector and a list are both capable of holding elements and having them in sorted order, vector is mush fast and less memory overhead.

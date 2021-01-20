@@ -1,0 +1,3 @@
+No, it can not.
+
+After a vector's size reaching its capacity, if we continue to add element (through push_back, emplace_back etc), the vector will reallocate memory large enough to hold the old and new elements, so after reallocation, its capacity will be equal to or larger than its new size. 

@@ -1,0 +1,5 @@
+begin() function is overloaded:
+	if used on non-const object, it will return iterator
+	if used on const object, it will return const_iterator.
+
+cbegin() function always returns a const_iterator no matter what the type of container is.

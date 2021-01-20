@@ -1,0 +1,1 @@
+if c.size() is 1, then val, val2, val3, val4 are all copies of the first and only element in the vector/list/deque/array/string.

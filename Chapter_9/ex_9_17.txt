@@ -1,0 +1,2 @@
+1. c1, and c2 have to be the same container type, and have same element type
+2. the element of c1/c2 must support the '<' and '==' operator.

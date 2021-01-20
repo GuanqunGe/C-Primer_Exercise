@@ -1,0 +1,3 @@
+Basically the reasoning is the same, so is the behavior.
+During the first iteration, iter first points to the very first element of the vector, and insert(iter, word) will insert the word before the element iter points to, amd returns the iterator that points to the newly added element, which is later assigned to iter. That means after the execution of this statement, iter again points to the very first element of the vector. So what the loop does to the vector is same as to a list, keeps inserting elements to the front of the vector.
+Inserting element to places other than the end of vector is very expensive.

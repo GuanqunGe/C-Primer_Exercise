@@ -1,0 +1,3 @@
+Two constraints, enforced by programmers:
+1. two iterators must denote the elements, or one past the last element, of the same container.
+2. the begin iterator must precede or equal to the end iterator.

@@ -1,0 +1,1 @@
+value_type, reference, const_reference, iterator and const_iterator all are good to read elements in a list of strings. To write to a list, both reference and iterator should be able to do so.

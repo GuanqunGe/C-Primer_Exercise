@@ -1,0 +1,7 @@
+If 256 words are read, then after resize, the size of vector is 384, smaller than the capacity it first requested to reserve. So the capacity must be >= 1024.
+
+If 512 words are read, after resize the size of vector is 768, again smaller than original space it reserved. Capacity doesn't change, and must be >= 1024.
+
+If 1000 words are read, after resize the size of vector is 1500, larger than the original space it reserved. So new memory will be allocated, and the capacity of the vector now has to be >= 1500.
+
+If 1048 words are read, memory has alrady been reallocated during the while loop. After resize, the size of vector is 1572, so the capacity has to be >= 1572.

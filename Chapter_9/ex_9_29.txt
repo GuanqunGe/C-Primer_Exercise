@@ -1,0 +1,4 @@
+if vec holds 25 elements:
+1. vec.resize(100) will expand the vec to hold 100 elements. The first 25 elements are the same as before, another 75 value-initailized elements are added to the back of vec. If element type of vec is class and doesn't have default constructor then it will throw an error.
+
+2. vec.resize(10) will delete the last 90 elements in the vec, keep the first 10 unchanged.

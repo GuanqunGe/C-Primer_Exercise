@@ -1,0 +1,5 @@
+vector's capacity means the number of element it CAN hold, before having to reallocate memory.
+
+vector's size means the number of elements it currently holds.
+
+vector's capacity must be equal to or larger than its size.

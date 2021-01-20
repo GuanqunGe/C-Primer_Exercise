@@ -1,0 +1,1 @@
+Yes, element type must allow default initialization if it's a class type, if resize(n) is to expand the container.

@@ -1,0 +1,5 @@
+The reasons are different for list and arrays.
+
+1. for array, while its elements do sit contiguously in memory, we can not delete or insert element from/to an array. Once array is declared or constructed, its size will not change, and since its size is part of array's type, we can literally see its capacity from the definition statement.
+
+2. for list, elements in list do not sit contiguously in memory. When we add an element to a list, address will be chosen from memory that's available at that time, then used to hold the element, so we don't need to worry about contiguous memory space for list, thus no need for capacity function. 

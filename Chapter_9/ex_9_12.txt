@@ -1,0 +1,7 @@
+A constructor that takes a container to copy:
+1. the container type and element type of these two must match (for arrays that means the size of the arrays must be the same too)
+2. The newly constructed container will have exactly the same elements as the one it copies from
+
+A constructor that takes two iterators:
+1. the container type of two can be different, and the element type can be different too as long as the element types are convertable.
+2. the newly constructed container will have the same elements only as these in the iterator range.

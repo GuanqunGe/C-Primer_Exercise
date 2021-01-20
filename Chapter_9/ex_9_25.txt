@@ -1,0 +1,5 @@
+If elem1 and elem2 are equal then no element will be erased from the container.
+
+If elem2 is the off-end-iterator, then elements from the one denoted by elem1 to the last element are erased from the container. 
+
+If elem1 and elem2 are both off-the-end iterators, no element will be erased.

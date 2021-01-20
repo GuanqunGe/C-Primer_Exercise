@@ -1,0 +1,1 @@
+I will reserve space for 100 character before actually writing charaters to the string.
