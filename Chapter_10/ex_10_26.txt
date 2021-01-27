@@ -1,0 +1,5 @@
+1) when assigning to an back_inserter, it essentially calls push_back. So back_inserter should only be used on vector, deque, list, and string.
+2) assigning to an front_inserter essentially calls push_front(), so front_isnerter should only be used on deque, list, forward_list. 
+3) calling inserter is like insert(iterator, value), which inserts element in front of the iterator. Inserter can be used on vector, deque, list, string.
+
+front_inserter yields an iterator that reverses the order of the sequence that it inserts; inserter and back_inserter don't. 

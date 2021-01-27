@@ -1,0 +1,5 @@
+Copy has 3 arguments, the first two should be input iterator, the third argument (iterator) should be output iterator.
+
+Reverse requires ==, != ++/--, and dereference operation to read and write, so reverse requires its two iterator arguments to be bidirectional iterator
+
+Unique requires forward iterator, since it need ==, !=, ++ and dereference operation to read and write.

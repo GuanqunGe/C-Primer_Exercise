@@ -1,0 +1,2 @@
+The algorithm itself does not modify the size of the container.
+back_inserter is a type of insert iterator that when assigning values through it, it will add an element to the container, so containers might change their size when algorithms operate on insert iterators. But algorithm itself doens't modify the size of container, for example if algorithm is operating on iterators other than insert iterator, the size of container will not change.

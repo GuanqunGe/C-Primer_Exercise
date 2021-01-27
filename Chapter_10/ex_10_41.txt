@@ -1,0 +1,11 @@
+ replace(beg, end, old_val, new_val);
+ // [beg, end) is the input range, this algorithm will replace element in the range whose value is old_val by new_val.
+
+ replace_if(beg, end, pred, new_val);
+ // [beg, end) is the input range, this algorithm will replace value of elements for which pred returns true by new_val.
+
+ replace_copy(beg, end, dest, old_val, new_val);
+ //[beg, end) is the input range, dest is the destination where this algorithm will write to. For every element in the input range, this algorithm will copy it into the dest, and if its value is old_val, it will be replaced by the new_val and then copied into the dest.
+
+ replace_copy_if(beg, end, dest, pred, new_val);
+ // [beg, end) is the input range, dest is the destination where this algorithm will write to. For every elment in the range, if running pred on it returns true, its value will be replaced by new_val when copied into dest, otherwise it will be directly copied into dest.

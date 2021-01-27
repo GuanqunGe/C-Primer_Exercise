@@ -1,0 +1,10 @@
+Iterator categories:
+1. input iterator: ==, != relational operation, prefix/postfix ++ operation, dereference operation(read-only), arrow operator ->  [single pass]
+
+2. output iterator: prefix/postfix ++ operation, dereference operation (write-only) [single pass]
+
+3. forward iterator: ==, != relational operation, prefix/postfix ++ operation, dereference operation (read & write) [multi-pass]
+
+4. bidirectional iterater: ==, != relational operation, prefix/postfix ++/-- operation, dereference operation (read & write) [multipass]
+
+5. random-access iterator: on top of the properties of bidirectional iterator, it supports full iterator arithmetic operations.

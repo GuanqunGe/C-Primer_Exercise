@@ -1,0 +1,1 @@
+In order to change the size of container, we'll need to call functions like erase(), insert(), emplace_back(), pop_front() ... etc. These are all member functions of a certain container. Given that algorithm only has access to the iterators, it can not call these member functions.

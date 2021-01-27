@@ -1,0 +1,2 @@
+If both rosters have C-style strings, ie. their element types are both const char*, then calling equal will yield unexpected result, or probably always returns false.
+Because using == operator on const char* is essentially comparing the address of C-style strings, which for two containers, that's always false.
