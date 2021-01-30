@@ -1,0 +1,3 @@
+see ex_11_12.cxx.
+
+using std::make_pair() is easiest, as there is no need to redefine the type of pair in the statement, also that its name is very easy to understand.

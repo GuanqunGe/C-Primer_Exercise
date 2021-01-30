@@ -1,0 +1,4 @@
+For a map of type map<int, vector<int>>:
+mapped_type is vector<int>
+key_type is int
+value_type is pair<const int, vector<int>>

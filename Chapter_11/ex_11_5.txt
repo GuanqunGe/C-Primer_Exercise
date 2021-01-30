@@ -1,0 +1,2 @@
+Map contains key-value pairs as element, while set contains only keys as element. 
+If there is a clearing mapping in a sequence of data, I would use map. Otherwise if I only want to query whether a certain bit of data is in the sequence, I would use set.

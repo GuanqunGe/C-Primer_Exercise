@@ -1,0 +1,6 @@
+key_type can be used to subscript a map.
+subscript operator returns a reference to the mapped_type.
+
+map<string, int> m;
+m["hello"] = 1;  //string type can be used to subscript map
+		 //return type of subscripting is reference to an int.

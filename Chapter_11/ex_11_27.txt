@@ -1,0 +1,2 @@
+I would use find to find out if a certain element with given key is existent in a associative container. 
+and use count to count the frequency of element with given key in the container, preferably in multiset and multimap.

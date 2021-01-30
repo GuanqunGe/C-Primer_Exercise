@@ -1,0 +1,7 @@
+1) Set is a type of associative container, so it does not support position-specific operations like sequential containers do, such as push_back(), push_front(). Also as associative container, set does not allow constructor and insertion operation that takes an integer of count and an element value.
+   
+   List as sequential container, does allow operations mentioned above.
+
+2) Set has keys as its elements, and keys have to be specific, no duplicates allowed.
+
+   Elements in lists can have duplicate, since they are accessed through iterators which are unique for every element.

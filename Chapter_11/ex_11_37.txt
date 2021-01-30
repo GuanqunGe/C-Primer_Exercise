@@ -1,0 +1,3 @@
+unordered container is preferred when we have key types for which there is no obvious ordering relationship among elements, or when maintaining the elements in order is costly.
+
+on the other hand, achieving good performance with unordered container needs a fair amount of tweaking and testing, which using ordered container can help avoid.

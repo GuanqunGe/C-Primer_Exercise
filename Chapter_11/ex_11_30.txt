@@ -1,0 +1,3 @@
+pos is a pair of iterators, intialized by the return value of equal_range.
+pos.first thus is an iterator, and in the for loop it's an iterator referring to an element in the container
+pos.first->second will give us the reference to the mapped_value of the element pos.first refers to, which is the book name.

@@ -1,0 +1,3 @@
+A vector stores values as its elements, and access them through integer subscript.
+A map stores key-value pair as its elements, and the key is used as subscript to access the 
+corresponding value.

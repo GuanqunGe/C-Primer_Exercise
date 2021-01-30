@@ -1,0 +1,5 @@
+If I pass them a key that is not in the container:
+ - upper_bound will return the iterator to the first element with key that's larger than the given key
+ - lower_bound will give the same iterator, which refers to where we can insert the given key without ruining the order
+ - equal_range will give a pair of iterators, of which the first and second elements are the same iterator, refering to 
+first element with key that's larger than the given key.

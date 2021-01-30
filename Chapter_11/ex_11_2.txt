@@ -1,0 +1,9 @@
+List is useful when you anticipate to remove/insert elements that possibly sits anywhere in the sequence from/to the sequence frequently.
+
+Vector is useful when you have a sequence of data that you anticipate to random access it and possibly add/remove element in the end.
+
+Deque is useful when you have a sequence of data that needs to be randomly accessd, but also sometimes needs to be removed/added in the front and end.
+
+Map is useful when you have a sequence of data that needs mapping.
+
+Set is useful when you have a large sequence of data that you just want to query as to whether element is in the set.

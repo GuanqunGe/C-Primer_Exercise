@@ -1,0 +1,1 @@
+It will not compile. Since subscript operator might add element to the map (if given key is not found in the map), it should not be used with const map object.

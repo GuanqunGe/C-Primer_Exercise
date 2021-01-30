@@ -1,0 +1,1 @@
+If a line in the transformation file has a key, one space, and then the end of the line, then string vlaue will have a size of 1, thus buildMap will throw a runtime_error, and printing out information "No rule for "+key.

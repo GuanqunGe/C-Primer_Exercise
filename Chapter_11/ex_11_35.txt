@@ -1,0 +1,2 @@
+The main difference would be that, in the case of a word appearing more than once in the word_transformation file, trans_map[key] = value.substr(1) will keep updating the mapped value of the word, ie. what's saved in the map is last corresponding phrase of the word.
+while trans_map.insert({key, value.substr(1)}) will ignore the insertion if key is existent in the map, so what ends up in the map is the first corresponding phrase of the word.

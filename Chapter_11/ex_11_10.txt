@@ -1,0 +1,2 @@
+1) yes, we can. Because vector<int>::iterator has < operator.
+2) no, we can't. Because list<int>::iterator does not have < operator.
