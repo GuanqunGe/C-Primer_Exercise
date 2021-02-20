@@ -1,0 +1,6 @@
+We can bind an lvalue reference to any variable/expressions that have the same type as the reference,
+and that are not temporary, with one exception that we can bind lvalue reference to const to temporary
+object of the same type.
+
+We can only bind rvalue reference to literal or expressions that yield rvalue, or bind rvalue reference
+to variable that has different type as the rvalue reference.

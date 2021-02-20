@@ -1,0 +1,12 @@
+If Message uses the synthesized version of the copy-control member:
+1) for copy constructor, the newly created object will have the same content, and point 
+to the same folders, but will not have relavant folders pointing it back
+
+2) for the copy-assignment, after the assignment, the left-hand object will have the same
+content and point to the same folders as the right-hand object, however, it will not have 
+the right set of folders pointing back to itself. The folders that point back to the left-hand 
+object will be the folders associated with its previous content.
+
+3) for the destructor, similar problem here. The content and pointers to relavant folders will 
+be deleted, ie the whole object is destructed, but there is still pointers in Folder object that
+points to this memory, which will probably cause errors when the Folder object is destructed.

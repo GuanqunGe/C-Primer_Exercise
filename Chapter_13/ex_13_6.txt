@@ -1,0 +1,11 @@
+A copy operator is a member function of the class object, with function name 'operator=',
+and takes an argument of the same type as the class object. It usually returns the
+reference to its left operand. 
+
+This operator is used when we copy assignment a class object using '='
+
+Synthesized copy-assignment operator basically assigns all non-static members of the right 
+operand object to the corresponding member of the left operand, using the copy assignment 
+operator for the type of each non-static member.
+
+Synthesized copy-assignment operator is synthesized during compilation.

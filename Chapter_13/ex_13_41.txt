@@ -1,0 +1,12 @@
+Because first_free is meant to point to one pass the last (constructed) element,
+so essentially what push_back should do is to first, construct an object in the 
+address first_free currently points to, then move first_free one step forward,
+such that we add an element at the back of the sequence, and first_free still points 
+to one past the last element
+
+If we use the prefix increment, there will be two problem:
+1. we are not adding element to the back of the sequence, instead the newly added 
+element and the (previously) last element in the sequence will be separated by one
+memory space that's enough to hold a string, which is still raw!
+2. first_free will not point to the address one pass the last element in the sequence,
+instead it will point to the last element.

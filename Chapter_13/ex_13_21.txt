@@ -1,0 +1,2 @@
+No, because the synthesized copy-control functions are perfectly good, behaving
+in the same way as we intend them to

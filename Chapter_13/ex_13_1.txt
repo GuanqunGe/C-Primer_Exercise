@@ -1,0 +1,1 @@
+Copy constructor is a constructor that constructs object and initializes object using reference to anther object of the same type. Its members are also copy initialized from members of that object.

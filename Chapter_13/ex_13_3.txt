@@ -1,0 +1,5 @@
+StrBlob only has one data member, which is shared_ptr type, so when we copy a StrBlob, the copy constructor of StrBlob will be called, which will call the copy constructor of shared_ptr to copy initialize the data member of new object being created.
+
+StrBlobPtr has two data member, one is weak_ptr, one is of size_t type. When we copy a StrBlob, the copy constructor of StrBlobPtr will be called, which will essentially copy initialize its data member, so the weak_ptr will be copy constructed, and the size_t data member will be directly copied in the new object being created.
+
+--> In both cases, the pointer in the newly created object points to the same place in the memory as pointer of the object we copy from.

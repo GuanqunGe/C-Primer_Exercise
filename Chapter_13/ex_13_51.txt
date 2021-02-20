@@ -1,0 +1,14 @@
+unique_ptr is a type, and when it's is returned by a function, what's returned is 
+a temporary object copy-constructed from the expression given in return statement. 
+While copy construction can use either copy constructor or move constructor, 
+unique_ptr does not have copy constructor nor copy assignment. So it's possible that 
+unique_ptr has only two constructors: regular constructor, and move constructor, as 
+it does not define copy constructor, copy constructor and copy assignment operator 
+are deleted.
+
+
+* Though, I don't see how the local variable of type unique_ptr inside the function 
+body can be temporary and thus bind to a rvalue reference..
+
+* I found one answer from others: https://github.com/jaege/Cpp-Primer-5th-Exercises/blob/master/ch13/13.51.md
+ But I am not satisfied with it either

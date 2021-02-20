@@ -1,0 +1,15 @@
+Plase see ex_13_44.cxx in folder `ex_13_44`
+
+vec.push_back(value) involves 2 to 3 steps
+- construct a temporary object, given value
+- construct a new element, based on the temporary object. 
+- or, if space is not enough, reallocate the vector, copy over all existingelement, 
+and then construct a new element based on the temporary object
+
+From what I see:
+- constructors used to construct temporary object depends on 
+the argument you give to push_back().
+- construction of new element is through copy constructor
+- At least with class String, reallocate the vector involves copy-constructing
+elements in the new address from the ones in the old address, instead of 'moving'
+/transfering the ownership.

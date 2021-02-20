@@ -1,0 +1,3 @@
+The same mysn number will be printed out three times.
+As b and c are just copy-initialized from a, which means they have the same mysn number.
+And so is the parameters in the function f.

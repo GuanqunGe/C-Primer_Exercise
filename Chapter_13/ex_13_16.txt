@@ -1,0 +1,7 @@
+Yes, if the parameter in f is const numbered&, then the three output will be different, 
+but each of them will correspond to the mysn member of object a, b, c
+
+
+Because when b and c are copy initialized, they are generated with different serial number from a.
+When function f is called, local variable s is an reference to the argument, so no copy construction
+here, thus argument and local variable s refer to the same object.

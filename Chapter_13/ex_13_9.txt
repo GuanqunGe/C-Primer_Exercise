@@ -1,0 +1,9 @@
+Destructor is a function that does whatever it needs to do to free the resources 
+used by the object and destroys the nonstatic data members of the object. Destructor 
+has a tilde in front of it, and it does not take any argument.
+
+Synthesized destructor has an empty function body, and destroys all nonstatic data 
+members during the implicit destruction phase after the execution of function body.
+
+Synthesized destructor is synthesized during compilation if the class does not define 
+its own destructor.

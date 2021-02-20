@@ -1,0 +1,8 @@
+The parameter is 'Folder&' because we don't want to add messages to a local copy of 'Folder', and 
+that we would like to change the member of 'Folder' inside the function.
+
+1) If we use 'Folder', then we'd be adding address of local copy of 'Folder' to the 'folders' member
+of messages, and also adding messages to the local copy of 'Folder', however this local copy of 'Folder'
+will be destroyed when the function finishes.
+
+2) If we use 'const Folder &', then we wouldn't be able to modify the data member of argument 'Folder'.

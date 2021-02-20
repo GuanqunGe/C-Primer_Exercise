@@ -1,0 +1,8 @@
+When a StrBlob object is destroyed, shared_ptr 'data' will be destroyed, and the 
+use count of dynamically allocated object that 'data' member points to will reduce 
+by 1, if the use count becomes 0, that object will be destroyed and momeory will be 
+freed. 
+e
+When a StrBlobPtr object is destroyed, its two data members will both be destroyed. 
+Since weak_ptr does not affect the use count of the object it's bound to, when 
+weak_ptr is destroyed, nothing happens to the object bounded to it.

@@ -1,0 +1,2 @@
+Because using copy and swap will involve more operations than directly define copy assignment operator
+And during copy and swap, extra copy of contents and set of pointers to Folders will be made.

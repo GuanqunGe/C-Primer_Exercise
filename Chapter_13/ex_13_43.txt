@@ -1,0 +1,3 @@
+For implemntation, see ex_13_39/StrVec.cxx, line 40.
+
+Personally I prefer the for loop instead of algorithm for_each, more straightforward. 

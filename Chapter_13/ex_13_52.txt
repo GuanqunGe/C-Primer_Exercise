@@ -1,0 +1,5 @@
+1.  hp = hp2;
+Parameter rhs in the copy assignment operator function will be copy constructed from hp2, through copy constructor. Because even though copy construction use either copy constructor or move constructor,  hp2 is a variable, thus can not be directly bound to rvalue reference, copy constructor is a better match. Therefor, rhs actually points to different memory space as hp2, and after the swap and destruction of rhs, hp will point to different memory space as hp2.
+
+2. hp = std::move(hp2)
+Similar as before, except that, std::move(p2) returns an rvalue reference, so rhs is copy-constructed tthrough the move constructor, therefore, rhs will point to the same memory space hp2 previouly pointed to, while hp2 will be cleaned up nicely and points to nowhere. Thus after the swap and destruction of rhs, hp will point to the same memory space hp2 had pointed to before, and hp2 will point to nowhere and is ready to be destroyed or redirected.  

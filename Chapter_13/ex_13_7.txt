@@ -1,0 +1,7 @@
+When we assign one StrBlob to another, the member 'data' of the left operand will be 
+copy-assigned from the 'data' member of the right-hand object, so essentially members 
+of these two operand will point to the same address in the memory.
+
+When we assign one StrBlobPtr to another, the 'curr' member and 'weakptr' member both will be 
+copy-assigned. So after the assignment, 'weakptr' members of two operands shares the ownership
+of an address in the memory. 

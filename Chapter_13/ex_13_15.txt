@@ -1,0 +1,6 @@
+Yes, if numbered has a copy constructor that generates a new serial number, then the output 
+would be three different mysn number, none of which is the same as either mysn member of a or b or c.
+
+Because when b and c are copy-initialized, they are assigned with new serial number.
+When function f is called, note that the parameter in function f is also copy initialized,
+so local variable s in function f will have different mysn member from a, b, c during each call.
