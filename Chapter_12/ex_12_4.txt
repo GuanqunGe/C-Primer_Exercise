@@ -1,0 +1,1 @@
+i is defined as size_type, which is unsigned integer type, it will never be negatvie.

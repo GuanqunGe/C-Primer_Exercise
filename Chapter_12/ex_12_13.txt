@@ -1,0 +1,3 @@
+sp and p both point to the same int object.
+delete p will destroy that object and free the memory
+so sp and p will be dangling pointers after execution of code. 

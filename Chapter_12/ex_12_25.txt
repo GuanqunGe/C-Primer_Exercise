@@ -1,0 +1,2 @@
+pa points to the first element in a dynamically allocated array, so:
+  delete [] pa;

@@ -1,0 +1,10 @@
+bool b(){
+    int* p = new int;
+    //...
+    return p;
+}
+
+// p is a built-in pointer that points to a dymanic memory
+// return type of b is a boolean, so it will alway return true, as p is not a nullptr
+// but after executon of function b, p will be out of scope, and we lost the pointer to 
+// the dynamically allocated memory which is not freed.

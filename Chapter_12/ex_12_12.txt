@@ -1,0 +1,20 @@
+auto p = new int(); // int pointer, points to an int object of value 0
+auto sp = make_shared<int>(); //shared_ptr, points to int object of value 0
+
+(a) process(sp);
+Legal, process the dynamically allocated object sp points to.
+sp stays valid after execution of process
+
+(b) process(new int());
+Illegal, the intent is probably to process a newly created int object of value 0
+But there is no implicit conversion between shared_ptr and built-in pointer
+
+(c) process(p);
+Illgal, intent is to process the object p points to
+But same reason as (b), no implicit conversion between p and shared_ptr
+
+(d) process(shared_ptr<int>(p));
+Legal, however, p will be a dangling pointer after execution of process.
+As the local shared_ptr inside process function will be the only shared_ptr
+pointing to the object p points to, thus after execution of process, 
+the object and memory p points to will be destroyed and freed.

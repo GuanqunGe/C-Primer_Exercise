@@ -1,0 +1,6 @@
+Only two things need to be changed:
+1. class name
+2. the argument type in the constructor of ConstStrBlobPtr should be const StrBlob&.
+
+The reason (my guess):
+Because const StrBlob only constrains the member 'data' to be a const shared_ptr, ie, it can not be redirected to point to other memories. So when we use 'data' to initialize weak_ptr, the top-level constness is ignored. With that said, whether or not 'data' is a const shared_ptr, does affect wptr at all.

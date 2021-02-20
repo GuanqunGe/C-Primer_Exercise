@@ -1,0 +1,1 @@
+See 'include/StrBlob.h' and 'include/StrBlobPtr.h'

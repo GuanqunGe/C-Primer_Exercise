@@ -1,0 +1,3 @@
+shared_ptr doesn't need release function, if we want to transfer the ownership of an 
+object, simply copy or initialize a shared_ptr then make the old shared_ptr points to
+null.

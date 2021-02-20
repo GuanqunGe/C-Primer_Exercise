@@ -1,0 +1,1 @@
+ I think separating this expression into two statements is better, as it's much clear what the intention is.

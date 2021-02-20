@@ -1,0 +1,2 @@
+If we call process as: process(shared_ptr<int>(p.get()))
+things will be different, as shared_ptr<int>(p.get()) will return a completely independent shared_ptr pointing to the same memory as p. That is to say, during the execution of function process, the reference count of both p and the local shared_ptr are 1. So when function process completes, the local shard_ptr is out of scope, and thus will destroy the object and free the memory p also points to, ie. p will be a dangling pointer.

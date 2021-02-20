@@ -1,0 +1,5 @@
+shared_ptr<int> p(new int(42));
+process(shared_ptr<int>(p));
+
+I think it's correct.
+shared_ptr<int>(p) returns a copy of p, so inside function process, the reference count of p is 2. when function process complete, refernce count of p will be 1, p is still a valid pointer
