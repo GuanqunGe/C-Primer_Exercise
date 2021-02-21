@@ -7,7 +7,8 @@ std::allocator<char> String::alloc;
 String::String(const char* pc){
     //string does not include '\0' character, while C-string does
     const char* iter = pc;
-    while(*iter){ //move iter forward until it points to the '\0' character
+    while(iter && *iter){ //move iter forward until it points to the '\0' character
+        //need to be careful with the case where pc is nullptr
 	//std::cout << *iter << " "; 
 	++iter;
     }  
