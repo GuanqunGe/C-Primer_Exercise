@@ -1,0 +1,6 @@
+A bit confused about what operand means?
+
+If operand means objects on either side of the operator, then function call opeartor should only have one operand.
+
+But if operand means the argument of overloaded function-call operator, then you can have as many operands 
+as you want, as long as overloaded functions do not cause any ambiguiousness.  

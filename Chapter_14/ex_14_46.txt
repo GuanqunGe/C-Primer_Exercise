@@ -1,0 +1,9 @@
+i think converting Sales_data to std::string is not a good idea, given that Sales_data class has an nonexplicit 
+constructor that takes std::string, the conversion operator will probably never be used implicitly. Also, converting Sales_data 
+to std::string does have actual meaning or benefit.
+
+Converting Sales_data to double can be somewhat useful, when you want to add different Sales_data object together with 
+other doubles to calculate the total revenue (but only when doubles are in the expression, if we simply add Sales_data objects 
+together, that's not gonna work and you will get unexpected result). So it's better to define double conversion as explicit, but 
+then it'd be cumbersome to use. thus things will be easier and clearer to use/understand if we just define a member function that 
+returns revenue member.

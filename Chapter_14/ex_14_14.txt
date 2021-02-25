@@ -1,0 +1,1 @@
+Becuase this way fewer copy initialization of the class are involved.

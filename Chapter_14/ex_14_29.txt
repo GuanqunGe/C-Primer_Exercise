@@ -1,0 +1,1 @@
+Because the increment and decrement operator changes underlying object, while const version of functions can not modify underlying object

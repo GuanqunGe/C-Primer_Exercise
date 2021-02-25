@@ -1,0 +1,6 @@
+This function doesn't check the status of input stream, so if anything wrong happened, and reading the input 
+stream failed, then price will be undefined value, there is also chance that part of the input class object 
+has been changed but other parts haven't been changed, thus the class object will probably generate misleading results.
+
+If we gave this operator the data (b) in ex_14_10, then the revenue of class object will be 24*0.95, and bookNo 
+of object is "10", which doesn't make sense at all

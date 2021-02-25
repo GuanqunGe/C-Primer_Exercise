@@ -1,0 +1,12 @@
+Overloaded operator differs from built-in operator in:
+1. overloaded operator operates on user-defined object type.
+2. if overloaded operator is a member function of a class, it has one fewer parameter than its operands.
+3. overloaded operator can be called either indirectly as the built-in operator, or directly in the same way 
+as an oridinary function.
+4. overloaded operator does not preserve order of evaluation and/or short-circuit evaluation as some of its 
+corresponding built-in operators do.
+
+Overloaded operators are the same as built-in operators in various aspects:
+1. Overloaded operator should have consistent meaning with corresponding built-in ones.
+2. Overloaded operator have the same precedence and associativity as the built-in ones.
+3. Overloaded operator has to have corresponding built-in ones, but not vice versa.

@@ -1,0 +1,5 @@
+input operator expects: string, unsigned integer, double
+
+(a) is expected input, will work normally, bookNo - 0-201-xxx, units_sold = 10, unit_price = 24.95
+(b) is not in the right form, but the program will run without error, and the status of input stream 
+is good as well. However, info in the class is:  bookNo - 10, units_sold = 24, unit_price = 0.95

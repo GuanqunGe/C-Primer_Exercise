@@ -1,0 +1,10 @@
+In my mind, overloaded == function for string and vector looks like:
+   bool operator==(const std::string &, const std::string &);
+   bool operator==(const vector<T> &, const vector<T> &);
+respectively.
+
+So, (a) "cobble" == "stone" can be run successfully without <string> header, so it does not use == operator for
+    string, instead it uses built-in operator.
+    (b) svec1[0] == svec2[0] uses overloaded == function for string
+    (c) svec1 == svec2 uses overloaded == function for vector
+    (d) "svec[0]=="stone" I am not sure if this actually can compile.

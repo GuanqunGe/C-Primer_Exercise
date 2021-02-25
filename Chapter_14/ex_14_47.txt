@@ -1,0 +1,6 @@
+struct Integral{
+    operator const int(); //can implicitly convert Integral into const int type, and may change the underlying object
+    operator int() const; //can implicitly convert Integral into int type, and may not change the underlying object
+};
+
+Even though I don't know(don't think) how/if the constness of the converted type will affect expression evaluation.

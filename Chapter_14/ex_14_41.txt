@@ -1,0 +1,4 @@
+Lambda is an easy way to write a function/class that's only used once.
+From ex_14_40.cxx, we can see that 3 classes are defined for simple operations and each is only used once, this is a waste.
+
+So if I have simple operations needed to do, and only needed once, I will use lambda, otherwise I will use class.

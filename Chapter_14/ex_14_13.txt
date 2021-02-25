@@ -1,0 +1,1 @@
+Sales_data can define subtraction, see ex_14_2.cxx for implementation

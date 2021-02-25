@@ -1,0 +1,18 @@
+(a) %: nonmember function, it's a symmetric operator
+
+(b) %=: member function, it's a compound-assignment
+
+(c) ++: member function, as either as a post-increment or a pre-increment, it changes the 
+state of object this operator is called on
+
+(d) ->: member function, because it's a "member" access arrow.
+
+(e) <<: nonmember function, built-in version is a bit-shift operator, which yields a copy of 
+the left operand with bit shifted to the left, so it does not change its operands. And it's 
+a symmetric operator.
+
+(f) &&: logical AND, nomember function, as it's symmetric operator
+
+(g) ==: equality operator, nonmember function, as it's symmetric operator
+
+(h) (): function call operator, must be defined as members.

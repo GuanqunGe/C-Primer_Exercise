@@ -1,0 +1,3 @@
+I guess it should, just like the pointers, sometimes we would like to know if the object is associated with any thing/tree
+ and if there is a conversion from the Tree type to bool, that can be helpful. And the conversion operator should be explicit, 
+to avoid potential problem of binary shift as just the example shown in this section.

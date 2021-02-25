@@ -1,0 +1,8 @@
+No, Tree class don't need copy/move assignment.
+
+B/c members of tree class are either built-in type, or well-defined class type, and Tree class 
+doesn't request memory from heap, so synthesized copy constructor and copy assignment, destructor 
+work well for Tree class.
+And since Tree class does not define any of the copy-control member function, and also that every 
+nonstatic member of Tree class can be moved, the compiler will synthesize the move constructor and 
+move assignment as well 

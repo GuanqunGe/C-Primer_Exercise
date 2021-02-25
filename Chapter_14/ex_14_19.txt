@@ -1,0 +1,4 @@
+No, because there is no logical reason for < operator.
+For tree, potentially we could sort them based on their age followed by type, but there is a high chance that 
+there are two trees with the same type and same age, but coming from different places, and having different names, 
+in this case, neither is smaller than the other, but they are not equal, which is not in line with our expectation.
