@@ -1,0 +1,18 @@
+Query class only has one data member, a smart pointer member 'q'.
+The compiler will synthesize default constructor, copy operation, move operation, and destructor for Query class.
+
+1. default constructor will construct a Query object with q being nullptr.
+
+2. copy operation will copy construct or copy assignment Query object, which member-wise copy construct or copy assgin smart pointer
+to Query_base. After the copy operation, the member 'q' in the left hand operand will point to the underlying object the 'q' in right
+hand operand points to, thus the user count of underlying object bound to the 'q' of right hand operand will increase by 1, while
+the user count of the underlying object left hand operand's 'q' previosly points to will reduce by 1 for the copy assignment case, after 
+the reduction if the user count has become 0, this object will be destroyed by calling the virtual destructor function. Version of 
+destructor function depends on the dynamic type the left hand operand's 'q' previously points to. 
+
+3. move operation will move construct or move assign Query object. After move operation, the user count of the underlying object
+right hand operand points to does not change. In move assignment, if the left hand and right hand are not the same object, then 
+the user count of the underlying object the left hand had previously pointed to will reduce by 1, and depending on whether it has become 0, 
+this object will probably be destroyed.
+
+4. destructor will simply destroy the shared_ptr, and if necessary destroy the underlying object 'q' has pointed to and free the memory.

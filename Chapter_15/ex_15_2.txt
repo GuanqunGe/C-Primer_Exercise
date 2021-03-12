@@ -1,0 +1,3 @@
+Derived class does not have access to the private members of the base class, just like other users.
+However, derived class have access to the protected members of the base class, while other users don't (
+other users only have access to the public members)

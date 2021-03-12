@@ -1,0 +1,1 @@
+Query_base is an abstract class, there can not be an object of Query_base type.

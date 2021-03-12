@@ -1,0 +1,9 @@
+(a) BinaryQuery b = Query("fiery") & Query("bird");
+    illegal, BinaryQuery is an abstract class, there can not be object of abstract class.
+
+(b) AndQuery b = Query("fiery") & Query("bird");
+    illegal, right hand expression returns temporary Query object, while left hand is of type AndQuery. There is no conversion
+    between Query and AndQuery
+
+9c) OrQuery c = Query("fiery") & Query("vird");
+    illegal, same reason as (b)

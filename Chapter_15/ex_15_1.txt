@@ -1,0 +1,2 @@
+A virtual member is a member in the base class, that may  be override by its derived class.
+A virtual member is dynamically bound to the base/derived class at run-time.

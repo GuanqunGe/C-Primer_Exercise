@@ -1,0 +1,2 @@
+Error message:
+cannot declare variable ‘d’ to be of abstract type ‘Disc_quote’, because the following virtual functions are pure within ‘Disc_quote’:

@@ -1,0 +1,5 @@
+Yes, because override and final qualifiers serve different purposes:
+    - override explicitly tellls compiler that the derived class intend to override corresponding function in its direct base class.
+    - final indicates that derived class from this class can not override this function.
+If we use override and final at the same time, it just means that this class intends to override corresponding function, and that 
+classes derived from this class should not override this function. 

@@ -1,0 +1,12 @@
+(a) Query(s1) | Query(s2) & ~Query(s3);
+   ~ has higher precedency than &, which has higher precedency than |, so the expression can be written as:
+   Query(s1) | ( Query(s2) & ( ~Query(s3)))
+   so NotQuery, AndQuery, and OrQuery will be created in the expression, of course, Query and WordQuery will be creatd as well.
+
+(b) Query(s1) | ( Query(s2) & ~Query(s3));
+    same as case (a)
+
+(c) (Query(s1) & ( Query(s2)) | (Query(s3) & Query(s4)));
+    essentially it's:
+    ( Query(s1) & Query(s2) ) | ( Query(s3) & Query(s4) );
+    so AndQuery and OrQuery will be generated, Query and WordQuery will be generated as well. 

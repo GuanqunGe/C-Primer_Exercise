@@ -1,0 +1,6 @@
+All base classes need virtual destructor.
+
+If the members of base class can be deleted by synthesized destructor, then virtual destructor can just be defined as =default.
+If the members of base class involves dynamic memory and dynamic memory needs to be handled/deleted by the class, then destructor
+should be defined as normal destructors and defined as virtual function.
+So in one setence, virtual destructor should perform the operations needed to destructor object of class type. 

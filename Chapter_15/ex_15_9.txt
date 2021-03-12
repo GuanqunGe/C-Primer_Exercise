@@ -1,0 +1,5 @@
+When an expression yields reference or pointer to base class type, its static type can differ from its dynamic type.
+eg. Bulk_quote k;
+    Quote &rq = k;
+    Quote *pq = &k;
+    

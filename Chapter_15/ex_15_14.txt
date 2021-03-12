@@ -1,0 +1,20 @@
+(a) bobj.print();
+
+    bobj is a plain type - non-reference, non-pointer type, so base::print() will be called
+
+(b) dobj.print();
+    dobj is a plain type, derived::print() function will be called.
+
+(c) bp1->name();
+    bp1 is a pointer of base type bound to a base object, base::name() will be called
+
+(d) bp2->name();
+    bp2 is a pointer of base type bound to a derived object; however, name() function is not a virtual function, 
+    derived class inherit this function from base class, so base::name() function will be called.
+
+(e) br1.print();
+    br1 is a reference of base type bound to a base object, so base::print() function will be called
+
+(f) br2.print();
+    br2 is a reference of base type bound to a derived object; and derived class overrides the print() function
+    in base class, so derived::print() function will be called.

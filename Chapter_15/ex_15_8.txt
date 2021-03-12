@@ -1,0 +1,5 @@
+static type is the type used to declare the variable or the type of result the expression yields; static type is known at compile time.
+dynamic type is the type of object in memory that the variable/expression represents; dynamic type may not be known until run time.
+
+For non-reference and non-pointer variable, static type and dynamic type are always the same.
+For reference or pointer of base class type, its static type and dynamic type can differ.

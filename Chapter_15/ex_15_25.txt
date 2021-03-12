@@ -1,0 +1,4 @@
+We define a default constructor for Disc_quote because the default constructor of Bulk_quote will call the default constructor of 
+Disc_quote. If we didn't define a default constructor for Disc_quote, then giving that Disc_quote has another constructor defined,
+compiler will not synthesize a default constructor for Disc_quote, and then impact is that we can not default initialize Bulk_quote 
+as well, since default constructor of Bulk_quote will call the default constructor of Disc_quote, which is in accessible.

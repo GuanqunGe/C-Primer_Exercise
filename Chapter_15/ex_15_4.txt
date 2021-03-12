@@ -1,0 +1,11 @@
+class Base{...};
+
+(a) class Derived:public Derived{};
+    wrong, as we can not derive a class from itself.
+
+(b) class Derived: private Base {...};
+    correct.
+
+(c) class Derived : public Base;
+    incorrect, when we declare a class without defining it, the declaration should only contain class name, not 
+    the derivation list.

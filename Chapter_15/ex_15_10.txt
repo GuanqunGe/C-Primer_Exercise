@@ -1,0 +1,6 @@
+read function is declared as:
+	std::istream &read(std::istream &is, Sales_data &item);
+std::ifstream is a derived class from base class std::istream, so while read function takes and returns reference to base class 
+std::istream as parameter/return type, the parameter/return type can be bound to derived class. This way, the reference to base class
+is bound to the base class part of the object of  derived class type, and ">>" operator will either call the overriden version if this
+operator is overide by std::ifstream class, or the version std::ifstream class inherits from its direct base class.

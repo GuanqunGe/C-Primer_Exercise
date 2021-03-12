@@ -1,0 +1,16 @@
+(1) First layer (root): copy constructor of Query class
+    Second layer: constructor of OrQuery and Query 
+    Third layer: constructor of WordQuery, and AndQuery, Query
+    Fourth layer: constructor of WordQuery and Query
+
+(2) call rep from q:
+    first, will call rep from the pointer member 'q' of object q, pointer member 'q' is bound to OrQuery object, so calling rep will first call the rep function of OrQuery class
+    second, OrQuery class inherits rep member function from BinaryQuery class, so calling rep is essentially calling BinaryQuery::rep()
+    thirdly, rep() in BinaryQuery calls the rep function of its two operand, in our case is a Query bound to an AndQuery object, and a Query bound to WordQuery object, so calling rep made  on these two Query object, will call rep() of AndQuery class and rep() of WordQuery class. rep() of WordQuery class will return the word member of WordQuery class
+    fourth, calling rep() of AndQuery class is actually calling BinaryQuery::rep(), which in turns calls rep() function of its two operands, which are Query object bound to WordQuery, so calls to rep() of WordQuery will be made
+    finally, after we resolve rep() calls of all leaves, strings returned from rep() calls will be processed in the reversed order. Eventually we will get a big string representing q. 
+
+(3) calls to eval made from q.eval():
+    similar case, q.eval() will first call OrQuery::eval().
+    OrQuery::eval() will probably calls eval() function on its two operand as well, so then calls to eval will be made on Query objects that are bound to WordQuery and AndQuery, thus WordQuery::eval() and AndQuery::eval() will be called.
+    AndQuery::eval() will probably calls eval() function on its two operands too, which are two Query objects bound to WordQuery objects, so WordQuery::eval() will essentially be called.
