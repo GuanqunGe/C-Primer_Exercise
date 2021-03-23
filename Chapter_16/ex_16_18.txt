@@ -1,0 +1,18 @@
+(a) template <typename T, U, typename V> void f1(T, U, V);
+   illegal, each typename parameter should be preceded with typename or class: template <typename T, typename U, typename V> void f1(T,U,V)
+
+(b) template <typename T> T f2(int &T);
+   illegal, T is declared as a typename parameter, we can not reuse same name within the scope of the template, should be:
+    template <typename T> T f2(int &); or template <typename T> T f2(const T&);
+
+(c) inline template <typename T> T foo(T, unsigned int *);
+   illegal, inline specifier should follow the template parameter list and precede the return type, so should be:
+   template <typename T> inline T foo(T, unsigned int*);
+
+(d) template <typename T> f4(T, T);
+   illegal, function declaration is missing return type, should be:
+   template <typename T> void f4(T, T);
+
+(e) typedef char Ctype;
+   template <typename Ctype> Ctype f5(Ctype a);
+   legal, template parameter Ctype hides the typedef of Ctype.

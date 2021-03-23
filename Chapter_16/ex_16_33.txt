@@ -1,0 +1,3 @@
+1. top-level const conversion: passing const int, template argument is deduced as int.
+2. array to pointer conversion: passing array for a non-reference argument, template argument will be deduced as pointer to array's 
+first element.

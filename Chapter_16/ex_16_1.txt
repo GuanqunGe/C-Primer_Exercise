@@ -1,0 +1,3 @@
+When we call a function template, the compiler (ordinarily) uses the arguments of the call to deduce the template arguments for us, then it 
+will create a new instance of the template using the  actual template arguments in place of the corresponding template parameters, that is 
+instatiation. 

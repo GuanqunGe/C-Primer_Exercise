@@ -1,0 +1,2 @@
+To use "<", the underlying object we are comparing needs to have "<" operator defined, which most of iterators don't. And "==" and "!=" 
+are defined for most types, so by using "!=" we don't need to worry about what specific type of the object we are running the code with. 

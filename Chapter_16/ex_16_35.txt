@@ -1,0 +1,15 @@
+template <typename T> T calc(T, int);
+template <typename T> T fcn(T, T);
+double d; float f; char c;
+
+(a) calc(c, 'c');
+    legal, type of T is char. There is a promote of char to int for the second argument.
+
+(b) calc(d, f);
+    legal, type of T is double. There is a arithmetic conversion from float to int for the second argument.
+
+(c) fcn(c, 'c');
+    legal, type of T is char.
+
+(d) fcn(d, f);
+    illegal, as from d a double type is deduced while from f a float type is deduced, the deduced types don't match.

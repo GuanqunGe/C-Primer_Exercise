@@ -1,0 +1,9 @@
+template <class T> int compare (const T&, const T&);
+
+(a) compare("hi", "world");
+    illegal, two arguments passed to function compare are string literals, of which type is array of const char. Note that the 
+parameter list of the function include reference to template argument, so T will be deduced as const char []. However, for the 
+first argument, T is deduced as char[3], while for the second argument, T is deduced as  char[6]. Deduced types do not match!
+
+(b) compare("bye", "dad");
+    legal, similar reason as (a).

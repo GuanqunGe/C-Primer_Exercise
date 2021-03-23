@@ -1,0 +1,15 @@
+Usage of allocator<T>.construct(p, args):
+    p is a pointer pointing to a raw dynamic allocated memory
+    args are arguments that will be passed to constructor of type T to construct an object of type T in the memory location.
+
+loop:
+    for(size_t i = 0; i!= size(); ++i)
+	alloc.construct(dest++, std::move(*elem++);
+
+1. First, postfix increment increments the variable but returns a copy of the old value.
+2. *elem++ is essentially *(elem++), which means elem increments by 1, but what's being dereferenced is the old value of elem,
+   so *elem++ gives a reference to the object elem has previously pointed to (an lvalue reference)
+3. std::move(*elem++) thus gives an rvalue reference to the object that's previously pointed by elem.
+4. alloc.construct(dest++, std::move(*elem++)) will increment both dest and elem, and construct an object at the memory location
+dest previously points to, with an rvalue reference to the object elem previously points to, so it will move-construct an object
+at that location.

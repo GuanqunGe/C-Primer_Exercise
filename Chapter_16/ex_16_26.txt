@@ -1,0 +1,4 @@
+NO! 
+If we explictily instantiate vector<NoDefault>, all members and member functions of vector template will be instantiated with NoDefault being the 
+template arguments, including vector constructor that takes a `size_t n' argument, which constructs a vector of n value-initialized elements. However,
+NoDefault class doesnot allow default initialization.

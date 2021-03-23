@@ -1,0 +1,8 @@
+During template argument deduction, the compiler uses types of the arguments in the call to find the template arguments that 
+genrate a version of the function that best matches the given call. Usually, instead of allowing arithmetic conversion, 
+derived-to-base conversion and user-defined conversions, the compiler generates new instantiations, except for three cases:
+1. top-level const conversion
+2. a reference or pointer to a const object can be passed a reference/pointer to a non-const object.
+3. array- or function-to-pointer conversion. If the function parameter is not a reference type, then when passed to an array 
+argument or a function argument, they will be converted to a pointer to first array element or pointer to function's type 
+respectively.

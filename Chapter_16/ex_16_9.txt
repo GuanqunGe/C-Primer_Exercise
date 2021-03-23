@@ -1,0 +1,7 @@
+A function template is a formula from which we can generate type-specific versions of that function. When we use a template, we specify -either implicitly 
+or explicitly - template arguments to bind to the template parameters. By imiplicitly, I mean when we call a function template, the compiler (oridinarily) 
+uses the arguments of the call to deduce the template arguments for us. 
+
+A class template is similar with function template in the way that from class template we can generate type-specific version of the class. But class templates 
+differ from function templates in that the compiler cannot deduce the template parameter types for a class template, so we must explicitly supply the template 
+arguments. 

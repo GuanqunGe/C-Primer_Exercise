@@ -1,0 +1,3 @@
+When the compiler instantiates a class template, it will rewrite the class template, replacing each instance of the template parameter by the given 
+template argument(s). And for each element type we specify, the compiler generates a different class. Each instantiation of a class template constitues 
+an independent class.

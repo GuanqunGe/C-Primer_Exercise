@@ -1,0 +1,4 @@
+It depends. If we don't explicitly specify the template argument, then calling function max passing it an int and a double
+is illegal as the deduced template arguments from two function arguments are different. However, if we explicitly specify
+the template argument of max function as <int> or <double>, then we can call it passing an int and a double, as in this case
+arithemetic conversions are allowed.

@@ -1,0 +1,7 @@
+If s is a string, explain svec.emplace_back(s).
+
+1. s is a lvalue of type std::string, so the member template emplace_back will deduce that type of Args is std::string&
+   thus void emplace_back<std::string&>(std::string&) will be instantiated.
+2. Inside the function body of emplace_back, std::forward<Args>(rest) will be std::forward<std::string&>(rest), which 
+   essentially casts rest to std::string&, which is lvalue reference. So the construct function will forward this lvalue
+   reference to the constructor of string that takes a reference to const std::string which in turn constructs an object in the heap.

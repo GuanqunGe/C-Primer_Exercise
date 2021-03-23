@@ -1,0 +1,2 @@
+If we call print on a type that does not have an << operator, then during compilation, specifically during the instantiation of the template
+function, there will be an error complaining that a certain type does not have << operator defined.

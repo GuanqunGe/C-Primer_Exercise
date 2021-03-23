@@ -1,0 +1,5 @@
+This solution is built based on 'ex_16_12' and 'ex_16_28'
+
+The only change that I had to make is to change the initialization of 'data' member of the Blob class, since the 
+SharedPtr class I defined does not take std::shared_ptr as arguments in the constructor, so had to change 
+std::make_shared<...> to new ...

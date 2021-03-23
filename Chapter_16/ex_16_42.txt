@@ -1,0 +1,12 @@
+template <typename T> void g(T&& val);
+int i = 0; const int ci = i;
+
+(a) g(i);
+    argument passed is lvalue, type of T is int&, type of val is int& &&, collapsed to int &
+
+(b) g(ci);
+    same, argument passed is lvalue, type of T is const int &, type of val is const int &
+
+(c) g(i * ci);
+    argument is the result of arithmetic expression, which is rvalue, of type int.
+    so type of T is int, type of val is int &&

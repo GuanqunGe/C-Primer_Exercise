@@ -1,0 +1,4 @@
+As far as I know, they are basically the same, and can be used interchangably. The only difference is that typename is added to the language after
+ templates were in widespread use, so some programmers continue to use class exclusively.
+
+If we want to use a type member of a template type parameter, we must explicitly tell the compiler that it is a type by using the keyword typename.

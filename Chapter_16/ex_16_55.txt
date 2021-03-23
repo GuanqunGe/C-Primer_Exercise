@@ -1,0 +1,5 @@
+If we declares the nonvariadic version fo print after the definition of the variadic version, when call to print with more than two arguments
+are made, the variadic version will be instantiated. And given that when the variadic version is defined, the non-variadic version is not in
+scope, inside the function body of variadic print, it does not know the existence of nonvariadic version, so it will keep instantiating 
+itself, until the parameter pack is empty, which will cause instantiation error, because print() template requires at least two arguments and
+one is given.

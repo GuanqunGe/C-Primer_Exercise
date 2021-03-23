@@ -1,0 +1,4 @@
+g(i = ci);
+
+i = ci is an assignment and returns left-hand operand, ie. returns i, which is lvalue.
+so type of T is int&, type pf val is int &. 

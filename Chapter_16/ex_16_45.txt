@@ -1,0 +1,11 @@
+template <typename T> void g(T&& val){
+
+    vector<T> v;
+}
+
+(1) if we call g on a literal value such as 42: g(42)
+    type of T is int, so void g<int>(int &&) will be instantiated, and inside the function body, a vector of int will be defined.
+
+(2) if we call g on a variable of type int.
+    since a variable is an lvalue, type of T is int&, void g<int&>(int &) will be instantiated, however since reference is not an 
+actual object, vector<int&> does not make any sense, thus there will be compilation error.

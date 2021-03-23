@@ -1,0 +1,2 @@
+I used one-to-one friendship, because when I compare two BlobPtr object, I only cares about BlobPtr object of that type, 
+not other types, so I only need one-to-one friendship

@@ -1,0 +1,9 @@
+(1) if g is declared as template <typename T> void g(T val);
+    (a) g(i), type of T is int
+    (b) g(ci), type of T is int. (top-level const is ignored)
+    (c) g(i*ci), type of T is int.
+
+(2) if g is declared as template <typename T> void g(const T&);
+    (a) g(i), type of T is int
+    (b) g(ci), type of T is again int. Because the function parameter is itself const, the type deduced for T will not be a const type.
+    (c) g(i*ci), arithmetic expression returns rvalue of type int, so type of T is int.

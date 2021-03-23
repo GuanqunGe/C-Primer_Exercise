@@ -1,0 +1,8 @@
+extern template class vector<string>;
+template class vector<Sales_data>;
+
+
+The first one is an instantiation declaration, telling the compiler that there is a definition of this instantiation elsewhere, so do not 
+instantiate 'class vector<string>' here.
+The second one is an instantiation definition, meaning 'class vector<Sales_data>' is instantiated, together with all the members of the 
+class template.

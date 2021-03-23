@@ -1,0 +1,8 @@
+syntax: std::make_shared<T>(args)
+functionality: returns a shared_ptr pointing to a dynamically allocated object of type T, uses args to initialize that object.
+	       arguments passed must match one of T's constructors. If no arguments is provided, object will be value-initialized
+
+
+From the functionality, one sure thing is that make_shared is a template function. And looks like make_shard will construct an object 
+using new and forward the args to new to construct the object, after getting the built-in pointer back from new, it will wrap it up with 
+std::shared_ptr, and return the shared_ptr.

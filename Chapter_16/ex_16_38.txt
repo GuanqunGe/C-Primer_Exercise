@@ -1,0 +1,9 @@
+syntax: std::make_shared<type>(args)
+
+If the type is built-in type, then when initializing an object of this type in the heap with the args, conversions are allowed.
+If the type is class type, then args will be used to call best-matched constructor for that class type and construct the object
+in the heap.
+
+So we can see that if we don't specify the template argument explicitly, it's impossible for the compiler to deduce the class
+type from the args. And for the built-in type case, the argument deduced by the compiler might be different from what you intended
+to use.

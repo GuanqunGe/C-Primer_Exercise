@@ -1,0 +1,6 @@
+No,defining specializations for debug_rep() does not affect function matching, because specialization is instantiation of the template.
+In the ex_16_65.cxx, there are still only two template available, no non-template functions, and matching would be in between these two 
+template (and their instantiations).
+
+if we defined overloaded debug_rep() instead of specialization, then matching would happen between two debug_rep templates and the non-
+template functions.

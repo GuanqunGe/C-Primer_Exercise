@@ -1,0 +1,7 @@
+1. the variadic errorMsg has to be called with at least two arguments, otherwise compiler cannot instantiate 
+std::ostream& print(std::ostream&) function; while the error_msg function on page 220 can be called with a 
+list of any number of strings.
+
+2. the variadic errorMsg can be called with any type of arguments, as long as the type of arguments have operator<<
+defined; while the error_msg function on page 220 can only be called with a list of arguments that are convertible to
+std::string.

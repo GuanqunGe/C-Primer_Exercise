@@ -1,0 +1,5 @@
+see 'ex_16_14'
+
+Both input and output need to be declared as friend of Screen class, because input operator changes the data members of Screen object, 
+while output operator need to access the width and contents members of the Screen object. And both input and output operators are made 
+as one-to-one friend to Screen class.
